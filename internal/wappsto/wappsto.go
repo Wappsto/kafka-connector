@@ -37,10 +37,10 @@ var done chan interface{}
 func Setup(conf config.Config) error {
 
 	if conf.Wappsto.Username == "" {
-		return errors.New("Wappsto username in configuration file is not provoded")
+		return errors.New("Wappsto username in configuration file is not provided")
 	}
 	if conf.Wappsto.Password == "" {
-		return errors.New("Wappsto password in configuration file is not provoded")
+		return errors.New("Wappsto password in configuration file is not provided")
 	}
 
 	var endpoint = "/services/session"
